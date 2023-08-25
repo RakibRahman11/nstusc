@@ -1,0 +1,34 @@
+[
+    {
+        "_id": "1",
+        "events_name": "NSTUSC Science Fest 2020",
+        "date": "01/01/2020",
+        "description": "The events is organized by NSTU Science Club at 'Bir Muktijuddha Haji Mohammad Idris Auditorim'",
+        "participation": 35,
+        "event_image": "https://i.ibb.co/VQk1kkj/E1.jpg"
+    },
+    {
+        "_id": "2",
+        "events_name": "NSTUSC Science Fest 2020",
+        "date": "01/01/2020",
+        "description": "The events is organized by NSTU Science Club at 'Bir Muktijuddha Haji Mohammad Idris Auditorim'",
+        "participation": 35,
+        "event_image": "https://i.ibb.co/PZWcDVs/E2.jpg"
+    },
+    {
+        "_id": "3",
+        "events_name": "NSTUSC Science Fest 2020",
+        "date": "01/01/2020",
+        "description": "The events is organized by NSTU Science Club at 'Bir Muktijuddha Haji Mohammad Idris Auditorim'",
+        "participation": 35,
+        "event_image": "https://i.ibb.co/VQk1kkj/E1.jpg"
+    },
+    {
+        "_id": "4",
+        "events_name": "NSTUSC Science Fest 2020",
+        "date": "01/01/2020",
+        "description": "The events is organized by NSTU Science Club at 'Bir Muktijuddha Haji Mohammad Idris Auditorim'",
+        "participation": 35,
+        "event_image": "https://i.ibb.co/PZWcDVs/E2.jpg"
+    }
+]
