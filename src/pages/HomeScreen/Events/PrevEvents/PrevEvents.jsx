@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
 import PrevEvent from "../PrevEvent/PrevEvent";
+import { Link } from "react-router-dom";
 
 const PrevEvents = () => {
     const [prevEvents, setPrevEvents] = useState([]);
@@ -12,7 +13,7 @@ const PrevEvents = () => {
     return (
         <div className="my-14">
             <SectionTitle heading={"Previous Events"}></SectionTitle>
-            <div className="grid grid-rows-none gap-4 grid-cols-3 grid-rows-3">
+            <div className="grid grid-cols-3 grid-rows-3 grid-rows-none gap-4">
                 {
                     prevEvents.map(item => <PrevEvent
                         key={item._id}
@@ -20,7 +21,7 @@ const PrevEvents = () => {
                     ></PrevEvent>)
                 }
             </div>
-            <p className="text-xl uppercase text-center bg-cyan-500 w-48 rounded mx-auto text-white font-bold w-96 h-7">All Events</p>
+            <Link to="/prevEvents"><p className="w-48 mx-auto text-xl font-bold text-center text-white uppercase rounded bg-cyan-500 w-96 h-7">All Events</p></Link>
         </div>
     );
 };

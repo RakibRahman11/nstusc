@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import UpEvent from "../UpEvent/UpEvent";
 import SectionTitle from "../../../../components/SectionTitle/SectionTitle";
+import { Link } from "react-router-dom";
 
 const UpEvents = () => {
     const [upEvents, setUpEvents] = useState([]);
@@ -12,7 +13,7 @@ const UpEvents = () => {
     return (
         <div className="my-14">
             <SectionTitle heading={"Upcoming Events"}></SectionTitle>
-            <div className="grid grid-rows-none gap-4 grid-cols-3 grid-rows-3">
+            <div className="grid grid-cols-3 grid-rows-3 grid-rows-none gap-4">
                 {
                     upEvents.map(item => <UpEvent
                         key={item._id}
@@ -20,7 +21,7 @@ const UpEvents = () => {
                     ></UpEvent>)
                 }
             </div>
-            <p className="text-xl uppercase text-center bg-cyan-500 w-48 rounded mx-auto text-white font-bold w-96 h-7">All Events</p>
+            <Link to="/upEvents"><p className="w-48 mx-auto text-xl font-bold text-center text-white uppercase rounded bg-cyan-500 w-96 h-7">All Events</p></Link>
         </div>
     );
 };
