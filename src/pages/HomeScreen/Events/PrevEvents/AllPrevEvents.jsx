@@ -17,7 +17,6 @@ const AllPrevEvents = () => {
             <SectionTitle heading={"Previous Events"}></SectionTitle>
             <div>
                 {
-
                     allPrevEvents.map(item => <>
                         <div className="my-14">
                             <img className="w-4/6 mx-auto mt-28" src={item.event_image} alt="" />
