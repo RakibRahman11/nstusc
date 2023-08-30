@@ -5,10 +5,10 @@ const useCommittee = () => {
     const [member, setMember] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('membersList.json')
+        fetch('http://localhost:5000/committee')
             .then(res => res.json())
             .then(data => {
-                setMember(data)
+                setMember(data) 
                 setLoading(false)
             })
     }, [])

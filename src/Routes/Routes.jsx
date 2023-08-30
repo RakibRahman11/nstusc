@@ -8,6 +8,8 @@ import AllUpEvents from "../pages/HomeScreen/Events/UpEvents/AllUpEvents";
 import BoardCommittee from "../pages/Committee/BoardCommittee";
 import ExecutiveCommittee from "../pages/Committee/ExecutiveCommittee";
 import RunningCommittee from "../pages/Committee/RunningCommittee";
+import Login from "../pages/Login/Login";
+import SignUp from "../pages/SignUp/SignUp";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +19,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
       },
       {
         path: 'prevEvents',
@@ -37,6 +43,10 @@ export const router = createBrowserRouter([
       {
         path: 'runningCommittee',
         element: <RunningCommittee></RunningCommittee>
+      },
+      {
+        path: 'signUp',
+        element: <SignUp></SignUp>
       }
     ]
   },

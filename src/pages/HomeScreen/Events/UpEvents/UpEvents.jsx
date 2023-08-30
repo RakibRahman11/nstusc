@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const UpEvents = () => {
     const [upEvents, setUpEvents] = useState([]);
     useEffect(() => {
-        fetch('upEvents.json')
+        fetch('http://localhost:5000/upcomingEvents')
             .then(res => res.json())
             .then(data => setUpEvents(data))
     }, [])

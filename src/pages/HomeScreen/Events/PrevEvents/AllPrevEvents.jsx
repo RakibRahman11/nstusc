@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 const AllPrevEvents = () => {
     const [allPrevEvents, setAllPrevEvents] = useState([]);
     useEffect(() => {
-        fetch('prevEvents.json')
+        fetch('http://localhost:5000/previousEvents')
             .then(res => res.json())
             .then(data => setAllPrevEvents(data))
     }, [])
