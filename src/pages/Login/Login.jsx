@@ -10,11 +10,33 @@ const Login = () => {
     const location = useLocation();
 
     const from = location.state?.from?.pathname || "/";
-    const { signIn } = useContext(AuthContext)
+    const { signIn, googleSignIn } = useContext(AuthContext)
 
     useEffect(() => {
         loadCaptchaEnginge(6);
     }, [])
+
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                const loggedInUser = result.user;
+                console.log(loggedInUser);
+                const saveUser = { name: loggedInUser.name, email: loggedInUser.email }
+                fetch('http://localhost:5000/users', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(saveUser)
+                })
+                    .then(res => res.json())
+                    .then(() => {
+                        navigate(from, { replace: true });
+                    })
+
+                navigate('/');
+            })
+    }
 
     const handleLogin = e => {
         e.preventDefault();
@@ -27,9 +49,9 @@ const Login = () => {
                 const user = result.user;
                 console.log(user);
             })
-        
+
         navigate(from, { replace: true });
-        // navigate('/')
+        navigate('/')
     }
 
     const handleValidateCaptcha = () => {
@@ -38,7 +60,6 @@ const Login = () => {
             setDisabled(false)
             alert('Captcha Matched');
         }
-
         else {
             setDisabled(true)
             alert('Captcha Does Not Match');
@@ -78,6 +99,13 @@ const Login = () => {
                         <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
                     </div>
                 </form>
+
+                <div className="divider">OR</div>
+
+                <div className='mx-auto my-5'>
+                    <button onClick={handleGoogleSignIn} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Continue with Goggle</button>
+                </div>
+
                 <p><small>New Here? <Link to="/signUp">Create an account</Link> </small></p>
             </div>
         </div>
