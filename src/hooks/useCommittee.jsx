@@ -5,7 +5,7 @@ const useCommittee = () => {
     const [member, setMember] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('http://localhost:5000/committee')
+        fetch('https://nstusc-server.onrender.com/committee')
             .then(res => res.json())
             .then(data => {
                 setMember(data) 

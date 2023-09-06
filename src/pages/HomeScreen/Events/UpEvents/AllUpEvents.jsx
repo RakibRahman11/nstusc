@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 const AllUpEvents = () => {
     const [allUpEvents, setAllUpEvents] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/upcomingEvents')
+        fetch('https://nstusc-server.onrender.com/upcomingEvents')
             .then(res => res.json())
             .then(data => setAllUpEvents(data))
     }, [])

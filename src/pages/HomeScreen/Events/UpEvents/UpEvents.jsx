@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const UpEvents = () => {
     const [upEvents, setUpEvents] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/upcomingEvents')
+        fetch('https://nstusc-server.onrender.com/upcomingEvents')
             .then(res => res.json())
             .then(data => setUpEvents(data))
     }, [])

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const PrevEvents = () => {
     const [prevEvents, setPrevEvents] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/previousEvents')
+        fetch('https://nstusc-server.onrender.com/previousEvents')
             .then(res => res.json())
             .then(data => setPrevEvents(data))
     }, [])
