@@ -1,5 +1,32 @@
 [
     {
+        "name": "Sanjida Akter Raha",
+        "designation": "President",
+        "department": "Biochemistry & Molecular Biology",
+        "session": "2017-18",
+        "contact": "01632234406",
+        "mail_address": "sanjidaraha11@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/sanjida-akter-raha-a8457517b",
+        "facebook": "https://www.facebook.com/sanjida.raha.12?mibextid=ZbWKwL",
+        "photo": "https://drive.google.com/open?id=1BWEjfHxZYd7xC9LzJAXgQeh4SfRv1Wak"
+    },
+    {
+        "name": "Md. Saiful Islam",
+        "designation": "Vice President",
+        "department": "Oceanography",
+        "session": "2017-18",
+        "contact": "01869199825",
+        "mail_address": "saifulislam78098@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/md-saiful-islam-426a931a5/",
+        "facebook": "",
+        "photo": "https://drive.google.com/open?id=1A6vehQ2ihs_UdXkFxY-bmhRArbjSO58c"
+    }
+]
+
+
+
+
+    {
         "_id": "1",
         "committee": "Board member",
         "designation": "Board of Director",

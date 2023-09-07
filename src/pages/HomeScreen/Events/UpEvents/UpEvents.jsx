@@ -13,7 +13,7 @@ const UpEvents = () => {
     return (
         <div className="my-14">
             <SectionTitle heading={"Upcoming Events"}></SectionTitle>
-            <div className="grid grid-cols-3 grid-rows-3 grid-rows-none gap-4">
+            <div className="grid grid-cols-1 grid-rows-3 grid-rows-none gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2">
                 {
                     upEvents.map(item => <UpEvent
                         key={item._id}
@@ -21,7 +21,7 @@ const UpEvents = () => {
                     ></UpEvent>)
                 }
             </div>
-            <Link to="/upEvents"><p className="w-48 mx-auto text-xl font-bold text-center text-white uppercase rounded bg-cyan-500 w-96 h-7">All Events</p></Link>
+            <Link to="/upEvents"><p className="w-1/2 mx-auto text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">All Events</p></Link>
         </div>
     );
 };
