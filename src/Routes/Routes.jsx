@@ -12,6 +12,8 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import Secret from "../pages/Shared/Secret/Secret";
+import AboutUs from "../pages/Shared/AboutUs/AboutUs";
+import Contact from "../pages/Contact/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ export const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>
+      },
+      {
+        path: '/about',
+        element: <AboutUs></AboutUs>
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
       },
       {
         path: 'prevEvents',
