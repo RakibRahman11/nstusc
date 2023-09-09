@@ -11,11 +11,11 @@ const Home = () => {
             <Helmet>
                 <title>NSTUSC | Home</title>
             </Helmet>
-           <Banner></Banner>
-           <UpEvents></UpEvents>
-           <PrevEvents></PrevEvents>
-           <Massage></Massage>
-           <Featured></Featured>
+            <Banner></Banner>
+            <UpEvents></UpEvents>
+            <PrevEvents></PrevEvents>
+            <Massage></Massage>
+            <Featured></Featured>
         </div>
     );
 };

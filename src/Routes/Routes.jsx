@@ -14,6 +14,7 @@ import PrivateRoute from "./PrivateRoute";
 import Secret from "../pages/Shared/Secret/Secret";
 import AboutUs from "../pages/Shared/AboutUs/AboutUs";
 import Contact from "../pages/Contact/Contact";
+import VisionMission from "../pages/Shared/VisionMission/VisionMission";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/visionMission',
+        element: <VisionMission></VisionMission>
       },
       {
         path: 'prevEvents',
