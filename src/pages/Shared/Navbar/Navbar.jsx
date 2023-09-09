@@ -14,7 +14,7 @@ const Navbar = () => {
         <li><Link to="/"><a>About Us</a></Link></li>
         <li><Link to="/"><a>Committee</a></Link></li>
         <li><Link to="/"><a>Home</a></Link></li>
-        <li><Link to="/"><a>Gallery</a></Link></li>
+        <li><Link to="/gallery"><a>Gallery</a></Link></li>
         <li><Link to="/"><a>Events</a></Link></li>
     </>
     return (

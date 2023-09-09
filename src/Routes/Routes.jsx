@@ -15,6 +15,7 @@ import Secret from "../pages/Shared/Secret/Secret";
 import AboutUs from "../pages/Shared/AboutUs/AboutUs";
 import Contact from "../pages/Contact/Contact";
 import VisionMission from "../pages/Shared/VisionMission/VisionMission";
+import Gallery from "../pages/Gallery/Gallery";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/gallery',
+        element: <Gallery></Gallery>
       },
       {
         path: '/visionMission',
