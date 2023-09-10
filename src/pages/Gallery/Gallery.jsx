@@ -13,7 +13,7 @@ const Gallery = () => {
                 <img className="" src="https://i.ibb.co/N3qVsxN/E3.jpg" />
             </div>
             <div className="w-3/5 mx-auto">
-                <img className="" src="https://i.ibb.co/N3qVsxN/E3.jpg" />
+                <img className="" src="https://i.ibb.co/N3qVsxN/E3.jp~g" />
             </div>
             <div className="w-3/5 mx-auto">
                 <img className="" src="https://i.ibb.co/N3qVsxN/E3.jpg" />

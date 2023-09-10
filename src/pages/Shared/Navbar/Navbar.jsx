@@ -29,7 +29,7 @@ const Navbar = () => {
                             {navOptions}
                         </ul>
                     </div>
-                    <Link to="/"><a className="md:text-xl normal-case btn btn-ghost">NSTU Science Club</a></Link>
+                    <Link to="/"><a className="normal-case md:text-xl btn btn-ghost">NSTU Science Club</a></Link>
 
                 </div>
                 <div className="hidden navbar-center lg:flex">

@@ -1,22 +1,34 @@
+import { Link } from "react-router-dom";
+
 const Massage = () => {
     return (
         <div className="w-10/12 mx-auto">
             <div className="h-2/5">
                 <div className="flex-col hero-content lg:flex-row-reverse">
-                    <img className="mx-auto" src="https://i.ibb.co/9GwHVHC/didar.jpg" />
-                    <div>
-                        <h2 className="text-4xl font-bold uppercase">Massage from Chief Advisor</h2>
-                        <p className="py-6">Professor Dr. Md. Didar-ul-Alam has been appointed as the Vice Chancellor (VC) (Second Period) of Noakhali University of Science and Technology (NSTU). He is a Retired professor in the Department of Soil, Water and Environment of Dhaka University. His Excellency the President and Chancellor of the University Mr. Mohammed Shahabuddin has given this appointment for the next four years as per Section 10 (1) of NSTU Act 2001.On Sunday 13 August 2023, with the approval of His Excellency the President and the Chancellor, the Secondary and Higher Education Department of the Ministry of Education issued a notification in this regard. This order will be implemented immediately.The Vice-Chancellor shall be permanently stationed on the University campus as the Chief Executive Officer of the University.</p>
+                    <div className="w-2/3 lg:w-full">
+                        <img className="mx-auto" src="https://i.ibb.co/pf3G8Nm/375020027-1338353420392254-260059806773435632-n.jpg" />
                     </div>
+                    <div>
+                        <h2 className="text-xl font-bold text-center uppercase md:text-4xl lg:text-left">Massage from Founder</h2>
+                        <p className="pt-5">Today, I stand before you as one of the proud founders of the Noakhali Science and Technology University Science Club. Our journey began with a simple yet powerful idea – to foster a community of passionate individuals who share a profound love for science. We envisioned a platform where scientific curiosity knows no bounds, where knowledge is not confined within the walls of a classroom but is free to soar beyond the realms of textbooks. The Noakhali Science and Technology University Science Club was founded on the principles of curiosity, exploration, and collaboration. It is a place where science transcends boundaries, where diverse minds come together to celebrate the wonders of the natural world and the innovations of human ingenuity.</p>
+                    </div>
+                </div>
+                <div>
+                    <Link to="/founder"><p className="w-1/2 mx-auto mb-5 text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">Read more</p></Link>
                 </div>
             </div>
             <div className="h-2/5">
                 <div className="flex-col hero-content lg:flex-row-reverse">
-                    <img className="mx-auto" src="https://i.ibb.co/9GwHVHC/didar.jpg" />
-                    <div>
-                        <h2 className="sm:text-center md:text-center lg:text-left text-4xl font-bold uppercase">Massage from Founder</h2>
-                        <p className="py-6 sm:text-center md:text-center lg:text-left">Professor Dr. Md. Didar-ul-Alam has been appointed as the Vice Chancellor (VC) (Second Period) of Noakhali University of Science and Technology (NSTU). He is a Retired professor in the Department of Soil, Water and Environment of Dhaka University. His Excellency the President and Chancellor of the University Mr. Mohammed Shahabuddin has given this appointment for the next four years as per Section 10 (1) of NSTU Act 2001.On Sunday 13 August 2023, with the approval of His Excellency the President and the Chancellor, the Secondary and Higher Education Department of the Ministry of Education issued a notification in this regard. This order will be implemented immediately.The Vice-Chancellor shall be permanently stationed on the University campus as the Chief Executive Officer of the University.</p>
+                    <div className="w-2/3 mt-5 lg:w-full">
+                        <img className="mx-auto" src="https://i.ibb.co/pf3G8Nm/375020027-1338353420392254-260059806773435632-n.jpg" />
                     </div>
+                    <div>
+                        <h2 className="text-xl font-bold text-center uppercase md:text-4xl lg:text-left">Massage from Founder</h2>
+                        <p className="py-5">Today, I stand before you as one of the proud founders of the Noakhali Science and Technology University Science Club. Our journey began with a simple yet powerful idea – to foster a community of passionate individuals who share a profound love for science. We envisioned a platform where scientific curiosity knows no bounds, where knowledge is not confined within the walls of a classroom but is free to soar beyond the realms of textbooks. The Noakhali Science and Technology University Science Club was founded on the principles of curiosity, exploration, and collaboration. It is a place where science transcends boundaries, where diverse minds come together to celebrate the wonders of the natural world and the innovations of human ingenuity.</p>
+                    </div>
+                </div>
+                <div>
+                    <Link to="/founder"><p className="w-1/2 mx-auto mb-5 text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">Read more</p></Link>
                 </div>
             </div>
         </div>
