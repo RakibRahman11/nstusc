@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from '../../providers/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -29,7 +29,7 @@ const Login = () => {
                     timer: 1500
                 })
                 const saveUser = { name: loggedInUser.name, email: loggedInUser.email }
-                fetch('http://localhost:5000/users', {
+                fetch('https://nstusc-server.onrender.com/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -62,9 +62,8 @@ const Login = () => {
                     showConfirmButton: false,
                     timer: 1500
                 })
+                navigate(from, { replace: true });
             })
-        navigate(from, { replace: true });
-        navigate('/')
     }
 
     const handleValidateCaptcha = (e) => {

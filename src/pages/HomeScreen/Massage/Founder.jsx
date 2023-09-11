@@ -11,7 +11,8 @@ const Founder = () => {
             </div>
             <div>
                 <h2 className="pt-5 pb-3 text-xl font-bold text-center uppercase md:text-4xl">Massage from Founder</h2>
-                <p className="px-5 text-center">Today, I stand before you as one of the proud founders of the Noakhali Science and Technology University Science Club.
+                <p className="px-5 text-center">
+                    Today, I stand before you as one of the proud founders of the Noakhali Science and Technology University Science Club.
                     Our journey began with a simple yet powerful idea – to foster a community of passionate individuals who share a profound love for science. We envisioned a platform where scientific curiosity knows no bounds, where knowledge is not confined within the walls of a classroom but is free to soar beyond the realms of textbooks.
                     The Noakhali Science and Technology University Science Club was founded on the principles of curiosity, exploration, and collaboration. It is a place where science transcends boundaries, where diverse minds come together to celebrate the wonders of the natural world and the innovations of human ingenuity.
                     Our Science Club is not just an organization; it is a haven for those who seek to unravel the mysteries of the universe, who yearn to conduct experiments that challenge the status quo, and who aspire to inspire the next generation of scientists. It is a place where dreams take flight, where ideas evolve into projects, and where students transform into scientists.

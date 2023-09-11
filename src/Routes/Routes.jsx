@@ -11,7 +11,6 @@ import RunningCommittee from "../pages/Committee/RunningCommittee";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
-import Secret from "../pages/Shared/Secret/Secret";
 import AboutUs from "../pages/Shared/AboutUs/AboutUs";
 import Contact from "../pages/Contact/Contact";
 import VisionMission from "../pages/Shared/VisionMission/VisionMission";
@@ -37,7 +36,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/founder',
-        element: <Founder></Founder>
+        element: <PrivateRoute><Founder></Founder></PrivateRoute>
       },
       {
         path: '/contact',
@@ -53,11 +52,11 @@ export const router = createBrowserRouter([
       },
       {
         path: 'prevEvents',
-        element: <AllPrevEvents></AllPrevEvents>
+        element: <PrivateRoute><AllPrevEvents></AllPrevEvents></PrivateRoute>
       },
       {
         path: 'upEvents',
-        element: <AllUpEvents></AllUpEvents>
+        element: <PrivateRoute><AllUpEvents></AllUpEvents></PrivateRoute>
       },
       {
         path: 'boardCommittee',
@@ -74,10 +73,6 @@ export const router = createBrowserRouter([
       {
         path: 'signUp',
         element: <SignUp></SignUp>
-      },
-      {
-        path: 'secret',
-        element: <PrivateRoute><Secret></Secret></PrivateRoute>
       }
     ]
   },

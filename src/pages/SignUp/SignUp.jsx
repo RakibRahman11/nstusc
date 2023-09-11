@@ -15,10 +15,17 @@ const SignUp = () => {
             .then(result => {
                 const loggedUser = result.user
                 console.log(loggedUser)
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Account created successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
                         const saveUser = { name: data.name, email: data.email }
-                        fetch('http://localhost:5000/users', {
+                        fetch('https://nstusc-server.onrender.com/users', {
                             method: 'POST',
                             headers: {
                                 'content-type': 'application/json'
@@ -29,16 +36,9 @@ const SignUp = () => {
                             .then(data => {
                                 if (data.insertId) {
                                     reset();
-                                    Swal.fire({
-                                        position: 'top-end',
-                                        icon: 'success',
-                                        title: 'User created successfully',
-                                        showConfirmButton: false,
-                                        timer: 1500
-                                    })
-                                    navigate('/');
                                 }
                             })
+                        navigate('/');
                     })
             })
     };
