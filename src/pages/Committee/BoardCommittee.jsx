@@ -11,7 +11,7 @@ const BoardCommittee = () => {
                 <title>NSTUSC | Board Member</title>
             </Helmet>
             <SectionTitle heading={"Board Member"}></SectionTitle>
-            <div className="grid grid-cols-3 grid-rows-3 grid-rows-none gap-4">
+            <div className="grid grid-cols-1 grid-rows-3 grid-rows-none gap-4 mx-auto lg:grid-cols-3 md:grid-cols-2">
                 {
                     board.map(item => <>
                         <div>
