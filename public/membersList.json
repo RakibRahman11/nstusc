@@ -1,35 +1,18 @@
 [
     {
-        "name": "Sanjida Akter Raha",
+        "committee": "First",
         "designation": "President",
-        "department": "Biochemistry & Molecular Biology",
-        "session": "2017-18",
-        "contact": "01632234406",
-        "mail_address": "sanjidaraha11@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/sanjida-akter-raha-a8457517b",
-        "facebook": "https://www.facebook.com/sanjida.raha.12?mibextid=ZbWKwL",
-        "photo": "https://drive.google.com/open?id=1BWEjfHxZYd7xC9LzJAXgQeh4SfRv1Wak"
+        "name": "Tahmidur Rahman",
+        "department": "ABC",
+        "session": "2019-20",
+        "contact": "01510000000",
+        "mail_address": "nstusc@gmail.com",
+        "social_link": "https://www.facebook.com/rakib.rahman.1257/",
+        "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "name": "Md. Saiful Islam",
+        "committee": "First",
         "designation": "Vice President",
-        "department": "Oceanography",
-        "session": "2017-18",
-        "contact": "01869199825",
-        "mail_address": "saifulislam78098@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/md-saiful-islam-426a931a5/",
-        "facebook": "",
-        "photo": "https://drive.google.com/open?id=1A6vehQ2ihs_UdXkFxY-bmhRArbjSO58c"
-    }
-]
-
-
-
-
-    {
-        "_id": "1",
-        "committee": "Board member",
-        "designation": "Board of Director",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -39,9 +22,8 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "2",
-        "committee": "Board member",
-        "designation": "Chief Board of Director",
+        "committee": "First",
+        "designation": "General Secretary",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -51,9 +33,8 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "3",
-        "committee": "Board member",
-        "designation": "Chief Advisor",
+        "committee": "First",
+        "designation": "Joint Secretary",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -63,9 +44,8 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "4",
-        "committee": "Board member",
-        "designation": "Co-advisor",
+        "committee": "First",
+        "designation": "Financial Secretary",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -75,9 +55,8 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "5",
-        "committee": "Board member",
-        "designation": "Co-advisor",
+        "committee": "Second",
+        "designation": "President",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -87,9 +66,8 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "6",
-        "committee": "Executive member",
-        "designation": "Senior Executive Officer",
+        "committee": "Second",
+        "designation": "Vice President",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -99,9 +77,8 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "7",
-        "committee": "Executive member",
-        "designation": "Senior Executive Officer",
+        "committee": "Second",
+        "designation": "General Secretary",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -111,9 +88,8 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "8",
-        "committee": "Executive member",
-        "designation": "Senior Executive Officer",
+        "committee": "Second",
+        "designation": "Joint Secretary",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -123,9 +99,8 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "9",
-        "committee": "Executive member",
-        "designation": "Senior Executive Officer",
+        "committee": "Second",
+        "designation": "Financial Secretary",
         "name": "Tahmidur Rahman",
         "department": "ABC",
         "session": "2019-20",
@@ -135,63 +110,38 @@
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "10",
-        "committee": "Running committee",
-        "designation": "Organizing Officer",
+        "committee": "Advisor",
+        "designation": "Advisor",
         "name": "Tahmidur Rahman",
         "department": "ABC",
-        "session": "2019-20",
-        "contact": "01510000000",
-        "mail_address": "nstusc@gmail.com",
-        "social_link": "https://www.facebook.com/rakib.rahman.1257/",
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "11",
-        "committee": "Running committee",
-        "designation": "Research and Development Officer",
+        "committee": "Advisor",
+        "designation": "Co-Advisor",
         "name": "Tahmidur Rahman",
         "department": "ABC",
-        "session": "2019-20",
-        "contact": "01510000000",
-        "mail_address": "nstusc@gmail.com",
-        "social_link": "https://www.facebook.com/rakib.rahman.1257/",
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "12",
-        "committee": "Running committee",
-        "designation": "Publication Officer",
+        "committee": "Advisor",
+        "designation": "Co-Advisor",
         "name": "Tahmidur Rahman",
         "department": "ABC",
-        "session": "2019-20",
-        "contact": "01510000000",
-        "mail_address": "nstusc@gmail.com",
-        "social_link": "https://www.facebook.com/rakib.rahman.1257/",
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "13",
-        "committee": "Running committee",
-        "designation": "Communication Officer",
+        "committee": "Advisor",
+        "designation": "Co-Advisor",
         "name": "Tahmidur Rahman",
         "department": "ABC",
-        "session": "2019-20",
-        "contact": "01510000000",
-        "mail_address": "nstusc@gmail.com",
-        "social_link": "https://www.facebook.com/rakib.rahman.1257/",
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     },
     {
-        "_id": "14",
-        "committee": "Running committee",
-        "designation": "Financial Officer",
+        "committee": "Advisor",
+        "designation": "Co-Advisor",
         "name": "Tahmidur Rahman",
         "department": "ABC",
-        "session": "2019-20",
-        "contact": "01510000000",
-        "mail_address": "nstusc@gmail.com",
-        "social_link": "https://www.facebook.com/rakib.rahman.1257/",
         "image": "https://i.ibb.co/hFx6FLh/abdullah.jpg"
     }
 ]

@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="p-10 rounded footer footer-center bg-base-200 text-base-content">
             <nav className="grid grid-flow-col gap-4">
                 <Link to='/about'><a className="link link-hover">About Us</a></Link>
-                <Link to='/boardCommittee'><a className="link link-hover">Committee</a></Link>
+                <Link to='/teamList'><a className="link link-hover">Our team</a></Link>
                 <Link to='/contact'><a className="link link-hover">Contact</a></Link>
                 <Link to='/visionMission'><a className="link link-hover">Mission and Vision</a></Link>
             </nav>
