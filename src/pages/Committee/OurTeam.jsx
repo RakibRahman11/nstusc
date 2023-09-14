@@ -16,7 +16,7 @@ const OurTeam = () => {
                 </Helmet>
                 <div className="py-5">
                     <SectionTitle heading={"1st Steering Committee"}></SectionTitle>
-                    <div className="grid grid-cols-3 grid-rows-3 grid-rows-none gap-4">
+                    <div className="grid grid-cols-1 grid-rows-3 grid-rows-none gap-4 md:grid-cols-2 lg:grid-cols-3">
                         {
                             firstCommittee.slice(0, 3).map(item => <>
                                 <div>
@@ -34,11 +34,11 @@ const OurTeam = () => {
                             )
                         }
                     </div>
-                    <Link to="/prevEvents"><p className="w-1/2 mx-auto text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">All Events</p></Link>
+                    <Link to="/firstCommittee"><p className="w-1/2 mx-auto my-5 text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">See all members</p></Link>
                 </div>
                 <div className="py-5">
                     <SectionTitle heading={"2nd Steering Committee"}></SectionTitle>
-                    <div className="grid grid-cols-3 grid-rows-3 grid-rows-none gap-4">
+                    <div className="grid grid-cols-1 grid-rows-3 grid-rows-none gap-4 md:grid-cols-2 lg:grid-cols-3">
                         {
                             secondCommittee.slice(0, 3).map(item => <>
                                 <div>
@@ -56,11 +56,11 @@ const OurTeam = () => {
                             )
                         }
                     </div>
-                    <Link to="/prevEvents"><p className="w-1/2 mx-auto text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">All Events</p></Link>
+                    <Link to="/secondCommittee"><p className="w-1/2 mx-auto my-5 text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">See all members</p></Link>
                 </div>
                 <div className="py-5">
-                    <SectionTitle heading={"2nd Steering Committee"}></SectionTitle>
-                    <div className="grid grid-cols-3 grid-rows-3 grid-rows-none gap-4">
+                    <SectionTitle heading={"Honorable Advisor"}></SectionTitle>
+                    <div className="grid grid-cols-1 grid-rows-3 grid-rows-none gap-4 md:grid-cols-2 lg:grid-cols-3">
                         {
                             advisorCommittee.slice(0, 3).map(item => <>
                                 <div>
@@ -75,7 +75,7 @@ const OurTeam = () => {
                             )
                         }
                     </div>
-                    <Link to="/prevEvents"><p className="w-1/2 mx-auto text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">All Events</p></Link>
+                    <Link to="/advisorCommittee"><p className="w-1/2 mx-auto my-5 text-xl font-bold text-center text-white uppercase rounded bg-cyan-500">See all members</p></Link>
                 </div>
             </div>
         </div>

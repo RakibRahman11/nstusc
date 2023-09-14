@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import FAQ from "../FAQ/FAQ";
+import JoinTeam from "../JoinTeam/JoinTeam";
 
 const AboutUs = () => {
     return (
@@ -26,7 +27,12 @@ const AboutUs = () => {
                     <div className="text-xl stat-value">120</div>
                 </div>
             </div>
-            <FAQ></FAQ>
+            <div className="flex flex-col w-full lg:flex-row">
+                <div className="grid flex-grow w-full lg:w-1/2 card rounded-box place-items-center"><FAQ></FAQ></div>
+                <div className="divider lg:divider-horizontal"></div>
+                <div className="grid flex-grow w-full lg:w-1/2 card rounded-box place-items-center"><JoinTeam></JoinTeam></div>
+            </div>
+            
         </div>
     );
 };

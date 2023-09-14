@@ -14,6 +14,9 @@ import VisionMission from "../pages/Shared/VisionMission/VisionMission";
 import Gallery from "../pages/Gallery/Gallery";
 import Founder from "../pages/HomeScreen/Massage/Founder";
 import OurTeam from "../pages/Committee/OurTeam";
+import FirstCommittee from "../pages/Committee/FirstCommittee";
+import SecondCommittee from "../pages/Committee/SecondCommittee";
+import Advisor from "../pages/Committee/Advisor";
 
 export const router = createBrowserRouter([
   {
@@ -59,6 +62,18 @@ export const router = createBrowserRouter([
       {
         path: '/teamList',
         element: <OurTeam></OurTeam>
+      },
+      {
+        path: '/firstCommittee',
+        element: <PrivateRoute><FirstCommittee></FirstCommittee></PrivateRoute>
+      },
+      {
+        path: '/secondCommittee',
+        element: <PrivateRoute><SecondCommittee></SecondCommittee></PrivateRoute>
+      },
+      {
+        path: '/advisorCommittee',
+        element: <PrivateRoute><Advisor></Advisor></PrivateRoute>
       },
       {
         path: 'signUp',
