@@ -10,7 +10,8 @@ const ContactMail = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate()
     const form = useRef();
-    const sendEmail = () => {
+    const sendEmail = (data) => {
+        console.log(data);
         emailjs
             .sendForm(
                 'service_bicg2ik',
@@ -26,7 +27,7 @@ const ContactMail = () => {
                 (error) => {
                     console.log(error.text);
                 });
-                
+
     };
     return (
         <div>
@@ -51,8 +52,8 @@ const ContactMail = () => {
                                 Email
                             </span>
                         </label>
-                        <input type="email" {...register("user_email", { required: true })} name="email" placeholder="email" className="input input-bordered" />
-                        {errors.user_email && <span className="text-rose-600">Email is required</span>}
+                        <input type="email" {...register("user_email", { required: true })} name="user_email" placeholder="Mail address" className="input input-bordered" />
+                        {errors.user_email && <span className="text-rose-600">Mail is required</span>}
                     </div>
                     <div className="form-control">
                         <label className="label">
