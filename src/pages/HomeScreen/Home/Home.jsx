@@ -4,6 +4,7 @@ import PrevEvents from "../Events/PrevEvents/PrevEvents";
 import UpEvents from "../Events/UpEvents/UpEvents";
 import Massage from "../Massage/Massage";
 import Featured from "../../Shared/Featured/Featured";
+import Birthday from "../Birthday/Birthday";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
                 <title>NSTUSC | Home</title>
             </Helmet>
             <Banner></Banner>
+            <Birthday></Birthday>
             <UpEvents></UpEvents>
             <PrevEvents></PrevEvents>
             <Massage></Massage>

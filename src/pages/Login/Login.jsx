@@ -80,7 +80,7 @@ const Login = () => {
 
     return (
         <div className="mx-auto mt-5 shadow-xl md:w-1/2 card w-96 bg-base-100">
-            <figure><img src="https://i.ibb.co/6y9DHb8/3d-modern-plexus-design-network-communications-modern-techno.jpg" alt="Shoes" /></figure>
+            <figure><img src="https://i.ibb.co/6y9DHb8/3d-modern-plexus-design-network-communications-modern-techno.jpg" alt="Login" /></figure>
             <div className="card-body">
                 <h2 className="card-title">Login to your account</h2>
                 <form onSubmit={handleLogin} className="card-body">
