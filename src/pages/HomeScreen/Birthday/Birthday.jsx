@@ -1,18 +1,18 @@
-const Birthday = () => {
-    const date = new Date();
-    const today = `${String(date.getDate()).padStart(2, '0')}-${String(date.getMonth() + 1).padStart(2, '0')}-${date.getFullYear()}`;
+const Birthday = ({item}) => {
+    const { name, birthdayDate } = item
+    console.log(name);
 
     return (
         <div className="flex justify-center mx-auto my-5">
-            <label htmlFor="my_modal_7" className="btn btn-outline btn-success">Today Birthday {today}</label>
+            <label htmlFor="my_modal_7" className="btn btn-outline btn-success">Today Birthday {birthdayDate}</label>
             {/* Put this part before </body> tag */}
             <input type="checkbox" id="my_modal_7" className="modal-toggle" />
             <div className="modal">
                 <div className="modal-box">
-                    <div className="card card-compact bg-base-100 shadow-xl">
+                    <div className="shadow-xl card card-compact bg-base-100">
                         <img src="https://i.ibb.co/vhnkHgh/birthday.jpg" alt="Shoes" />
                         <div className="card-body">
-                            <h2 className="card-title mx-auto">SUNANDA DEWAN</h2>
+                            <h2 className="mx-auto card-title">{name}</h2>
                         </div>
                     </div>
                 </div>
