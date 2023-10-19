@@ -1,12 +1,14 @@
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const ContactMail = () => {
+    const { user } = useContext(AuthContext)
     const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate()
     const form = useRef();
@@ -43,7 +45,7 @@ const ContactMail = () => {
                                 Name
                             </span>
                         </label>
-                        <input type="text" {...register("user_name", { required: true })} name="user_name" placeholder="Name" className="input input-bordered" />
+                        <input value={user.displayName} type="text" {...register("user_name", { required: true })} name="user_name" placeholder="Name" className="input input-bordered" readOnly />
                         {errors.user_name && <span className="text-rose-600">Name is required</span>}
                     </div>
                     <div className="form-control">
@@ -52,7 +54,7 @@ const ContactMail = () => {
                                 Email
                             </span>
                         </label>
-                        <input type="email" {...register("user_email", { required: true })} name="user_email" placeholder="Mail address" className="input input-bordered" />
+                        <input value={user.email} type="text" {...register("user_email", { required: true })} name="user_email" className="input input-bordered" readOnly />
                         {errors.user_email && <span className="text-rose-600">Mail is required</span>}
                     </div>
                     <div className="form-control">
@@ -61,7 +63,7 @@ const ContactMail = () => {
                                 Message
                             </span>
                         </label>
-                        <input type="text" placeholder="Type here" className="w-full max-w-xs input input-bordered input-lg" />
+                        <textarea name="message" placeholder="Type here" className="w-full max-w-xs input input-bordered input-lg" />
                     </div>
                     <div className="mt-6 form-control">
                         <input className="btn btn-primary" type="submit" value="Send" />
