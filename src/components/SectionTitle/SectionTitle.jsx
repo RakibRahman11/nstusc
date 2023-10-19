@@ -1,7 +1,7 @@
 const SectionTitle = ({ heading }) => {
     return (
         <div>
-            <p className="md:text-3xl text-xl uppercase text-center py-5 text-cyan-500 font-bold">{heading}</p>
+            <p className="py-5 text-xl font-bold text-center uppercase md:text-3xl text-cyan-500">{heading}</p>
         </div>
     );
 };

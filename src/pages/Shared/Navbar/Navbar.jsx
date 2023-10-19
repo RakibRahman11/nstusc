@@ -44,13 +44,13 @@ const Navbar = () => {
             </div>
             {
                 user ?
-                    <div className="navbar-end">
+                    <div className="w-24 navbar-end row-reverse">
                         <button onClick={handleLogOut} className="btn btn-ghost navbar-end">
                             LogOut
                         </button>
                     </div>
                     :
-                    <div className="navbar-end">
+                    <div className="w-24 navbar-end row-reverse">
                         <Link to="/login">Login</Link>
                     </div>
             }

@@ -4,7 +4,6 @@ import {
 import Main from "../Layout/Main";
 import Home from "../pages/HomeScreen/Home/Home";
 import AllPrevEvents from "../pages/HomeScreen/Events/PrevEvents/AllPrevEvents";
-import AllUpEvents from "../pages/HomeScreen/Events/UpEvents/AllUpEvents";
 import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
@@ -54,10 +53,6 @@ export const router = createBrowserRouter([
       {
         path: '/prevEvents',
         element: <PrivateRoute><AllPrevEvents></AllPrevEvents></PrivateRoute>
-      },
-      {
-        path: '/upEvents',
-        element: <PrivateRoute><AllUpEvents></AllUpEvents></PrivateRoute>
       },
       {
         path: '/teamList',
