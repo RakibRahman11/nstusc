@@ -7,7 +7,7 @@ const VisionMission = () => {
             <div className="flex flex-col w-full my-3 md:flex-row">
                 <div className="grid flex-grow w-full lg:w-1/2 card rounded-box place-items-center">
                     <SectionTitle heading={"Vision"}></SectionTitle>
-                    <h3 className="mx-5 mb-5 text-center md:w-2/3 md:mx-auto">
+                    <h3 className="mx-5 mb-5 leading-6 text-center md:w-2/3 md:mx-auto">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium saepe provident aperiam, nesciunt molestiae rem aut ut nam commodi inventore quisquam, deleniti officiis neque facere tempora eveniet quas modi ipsum laboriosam molestias, error ratione praesentium cum. Aspernatur vitae doloribus excepturi enim tempore dicta id molestiae fugit? Expedita debitis consequatur tempora beatae rerum et alias odit obcaecati aperiam minus nam tempore vitae rem nihil officia cumque perferendis, tenetur ex quaerat asperiores, aliquam iusto incidunt! In sequi ducimus fugit at ea expedita ipsum id maiores reiciendis, quo debitis. Excepturi cupiditate, nobis provident quis assumenda tempora ratione facilis quo nostrum tempore quam? Exercitationem.
                     </h3>
                 </div>
@@ -22,15 +22,15 @@ const VisionMission = () => {
                 </div>
                 <div className="grid flex-grow w-full lg:w-1/2 card rounded-box place-items-center">
                     <SectionTitle heading={"Mission"}></SectionTitle>
-                    <h3 className="mx-5 text-center md:w-2/3 md:mx-auto">
+                    <h3 className="mx-5 leading-6 text-center md:w-2/3 md:mx-auto">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium saepe provident aperiam, nesciunt molestiae rem aut ut nam commodi inventore quisquam, deleniti officiis neque facere tempora eveniet quas modi ipsum laboriosam molestias, error ratione praesentium cum. Aspernatur vitae doloribus excepturi enim tempore dicta id molestiae fugit? Expedita debitis consequatur tempora beatae rerum et alias odit obcaecati aperiam minus nam tempore vitae rem nihil officia cumque perferendis, tenetur ex quaerat asperiores, aliquam iusto incidunt! In sequi ducimus fugit at ea expedita ipsum id maiores reiciendis, quo debitis. Excepturi cupiditate, nobis provident quis assumenda tempora ratione facilis quo nostrum tempore quam? Exercitationem.
                     </h3>
                 </div>
             </div>
 
-            <div className="w-2/3 mx-auto my-5 lg:w-1/2">
+            <div className="w-2/3 mx-auto my-5 leading-6 lg:w-1/2">
                 <SectionTitle heading={"Objectives"}></SectionTitle>
-                <h3>
+                <h3 className="mb-2">
                     Our Science Club at Noakhali University of Science and Technology is driven by a core objective: to foster a profound appreciation for science while cultivating an enriching environment for research and scientific exploration.
                     To achieve this, our club is committed to organizing the following initiatives:
                 </h3>

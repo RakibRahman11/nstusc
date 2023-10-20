@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form"
 import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import Button from "../../../components/SectionTitle/Button";
 
 
 const JoinTeam = () => {
@@ -30,8 +31,8 @@ const JoinTeam = () => {
     return (
         <div className="mx-5">
             <SectionTitle heading={"Member Recruitment 2023"}></SectionTitle>
-            <h3 className="mx-1 text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste natus error id nobis eius perferendis eos nemo ducimus quasi? Assumenda harum deserunt, fugiat dicta esse ad eum est iste impedit voluptate odit, culpa, laboriosam quasi a quis laudantium expedita magni inventore. Eius, consequuntur? Voluptatum similique soluta deleniti ea doloremque?</h3>
-            <ul className="mx-5 list-disc">
+            <h3 className="mx-1 leading-6 text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste natus error id nobis eius perferendis eos nemo ducimus quasi? Assumenda harum deserunt, fugiat dicta esse ad eum est iste impedit voluptate odit, culpa, laboriosam quasi a quis laudantium expedita magni inventore. Eius, consequuntur? Voluptatum similique soluta deleniti ea doloremque?</h3>
+            <ul className="mx-5 leading-6 list-disc">
                 <li>To register, go to the registration link.</li>
                 <li>Fill out the form with appropriate information.</li>
                 <li>Pay 205 BDT for Membership</li>
@@ -41,7 +42,8 @@ const JoinTeam = () => {
                 <li>For any further query, please email dsclub@diu.edu.bd</li>
             </ul>
 
-            <button className="flex justify-start mx-auto my-5 btn" onClick={() => document.getElementById('my_modal_3').showModal()}>JOIN NSTUSC</button>
+            <button className="flex justify-start mx-auto my-5" onClick={() => document.getElementById('my_modal_3').showModal()}><Button buttonTitle={"JOIN NSTUSC"}></Button></button>
+
             <dialog id="my_modal_3" className="modal">
                 <div className="modal-box">
                     <form method="dialog">
@@ -109,8 +111,8 @@ const JoinTeam = () => {
                                 {errors.contact?.type === 'maxLength' && <span className="text-rose-600">Give your 11 digit contact number</span>}
                             </div>
 
-                            <div className="mt-2 form-control">
-                                <input className="btn btn-primary" type="submit" value="Submit" />
+                            <div className="form-control">
+                                <input className="mt-5 btn btn-primary" type="submit" value="Submit" />
                             </div>
 
                         </form>

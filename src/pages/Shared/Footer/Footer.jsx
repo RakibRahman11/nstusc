@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className="p-10 rounded footer footer-center bg-base-200 text-base-content">
+        <footer className="py-10 rounded footer footer-center bg-[#3157ab]/[.1] text-base-content">
             <nav className="grid grid-flow-col gap-4">
                 <Link to='/about'><a className="link link-hover">About Us</a></Link>
                 {/* <Link to='/teamList'><a className="link link-hover">Our team</a></Link> */}

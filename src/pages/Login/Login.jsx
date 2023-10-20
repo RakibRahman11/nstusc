@@ -3,9 +3,11 @@ import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-s
 import { AuthContext } from '../../providers/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import Button from '../../components/SectionTitle/Button';
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true)
+    const [error, setError] = useState("")
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -44,6 +46,8 @@ const Login = () => {
                 navigate('/');
             })
     }
+    
+    
 
     const handleLogin = e => {
         e.preventDefault();
@@ -63,7 +67,13 @@ const Login = () => {
                     timer: 1500
                 })
                 navigate(from, { replace: true });
-            })
+            }).catch((error) => {
+                setError(error.message);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'The information is not correct'
+                  })
+              });
     }
 
     const handleValidateCaptcha = (e) => {
@@ -107,15 +117,16 @@ const Login = () => {
                         <input onBlur={handleValidateCaptcha} type="text" name="captcha" placeholder="Type the text above" className="input input-bordered" />
                         {/* <button  className='mt-2 btn btn-outline btn-xs'>Validate</button> */}
                     </div>
+                    {/* {error && <span className="text-center text-rose-600">Please input correct information</span>} */}
                     <div className="mt-6 form-control">
                         <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
                     </div>
                 </form>
 
                 <div className="divider">OR</div>
-
-                <div className='mx-auto my-5'>
-                    <button onClick={handleGoogleSignIn} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Continue with Goggle</button>
+                {/* className="btn-xs sm:btn-sm md:btn-md lg:btn-lg" */}
+                <div className='mx-auto my-5' onClick={handleGoogleSignIn}>
+                        <Button buttonTitle={"Google Login"} />
                 </div>
 
                 <p><small>New Here? <Link to="/signUp">Create an account</Link> </small></p>

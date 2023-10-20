@@ -1,12 +1,20 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
     const handleLogOut = () => {
         logOut()
             .then(() => { })
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Logout successfully done',
+                showConfirmButton: false,
+                timer: 1500
+            })
             .catch(error => console.log(error))
     }
 
@@ -22,7 +30,7 @@ const Navbar = () => {
         </details></li>
         <li><Link to="/"><a>Home</a></Link></li>
         <li><Link to="/gallery"><a>Gallery</a></Link></li>
-        <li><Link to="/"><a>Events</a></Link></li>
+        <li><Link to="/prevEvents"><a>Events</a></Link></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -35,6 +43,7 @@ const Navbar = () => {
                         {navOptions}
                     </ul>
                 </div>
+                <img src="https://i.ibb.co/m5HG8CM/logo.png" className="w-12 h-12 lg:w-20 lg:h-20" />
                 <Link to="/"><a className="normal-case md:text-xl btn btn-ghost">NSTU Science Club</a></Link>
             </div>
             <div className="hidden navbar-center lg:flex">
@@ -44,14 +53,14 @@ const Navbar = () => {
             </div>
             {
                 user ?
-                    <div className="w-24 navbar-end row-reverse">
+                    <div className="w-1/2 md:w-32 navbar-end row-reverse">
                         <button onClick={handleLogOut} className="btn btn-ghost navbar-end">
                             LogOut
                         </button>
                     </div>
                     :
-                    <div className="w-24 navbar-end row-reverse">
-                        <Link to="/login">Login</Link>
+                    <div className="w-1/2 md:w-32 navbar-end row-reverse">
+                        <Link className="btn btn-ghost navbar-end" to="/login">Login</Link>
                     </div>
             }
         </div>

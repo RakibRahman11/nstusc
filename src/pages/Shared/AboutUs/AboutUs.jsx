@@ -10,10 +10,10 @@ const AboutUs = () => {
                 <title>About NSTUSC</title>
             </Helmet>
             <SectionTitle heading={"Know About NSTU Science Club"}></SectionTitle>
-            <h3 className="mx-5 text-center md:w-1/2 md:mx-auto">
+            <h3 className="mx-5 leading-6 text-center md:w-1/2 md:mx-auto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium saepe provident aperiam, nesciunt molestiae rem aut ut nam commodi inventore quisquam, deleniti officiis neque facere tempora eveniet quas modi ipsum laboriosam molestias, error ratione praesentium cum. Aspernatur vitae doloribus excepturi enim tempore dicta id molestiae fugit? Expedita debitis consequatur tempora beatae rerum et alias odit obcaecati aperiam minus nam tempore vitae rem nihil officia cumque perferendis, tenetur ex quaerat asperiores, aliquam iusto incidunt! In sequi ducimus fugit at ea expedita ipsum id maiores reiciendis, quo debitis. Excepturi cupiditate, nobis provident quis assumenda tempora ratione facilis quo nostrum tempore quam? Exercitationem.
             </h3>
-            <div className="grid w-1/2 mx-auto my-5 text-center border-4 border-indigo-200 shadow stats stats-vertical md:stats-horizontal border-b-indigo-500 justify-items-center">
+            <div className="grid w-full md:w-2/6 mx-auto my-5 text-center border-4 border-[#3157ab]/[.3] shadow stats stats-horizontal border-b-[#08153d]/[.8] justify-items-center">
                 <div className="stat">
                     <div className="stat-title">Visited</div>
                     <div className="text-xl stat-value">6</div>
@@ -32,7 +32,7 @@ const AboutUs = () => {
                 <div className="divider lg:divider-horizontal"></div>
                 <div className="grid flex-grow w-full lg:w-1/2 card rounded-box place-items-center"><JoinTeam></JoinTeam></div>
             </div>
-            
+
         </div>
     );
 };
