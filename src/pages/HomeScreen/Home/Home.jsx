@@ -10,10 +10,8 @@ import { useEffect } from "react";
 
 const Home = () => {
     const [allBirthday, setAllBirthday] = useState([]);
-    console.log(allBirthday);
     const date = new Date();
     const today = `${String(date.getDate()).padStart(2, '0')}-${String(date.getMonth() + 1).padStart(2, '0')}-${date.getFullYear()}`;
-
 
     useEffect(() => {
         fetch('birthdayList.json')

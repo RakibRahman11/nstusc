@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const Gallery = () => {
     return (
         <div>
+            <Helmet>
+                <title>NSTUSC Gallery</title>
+            </Helmet>
             <div className="w-full carousel">
                 <div id="slide1" className="relative w-1/2 m-2 carousel-item">
                     <img src="https://i.ibb.co/N3qVsxN/E3.jpg" className="w-full" />

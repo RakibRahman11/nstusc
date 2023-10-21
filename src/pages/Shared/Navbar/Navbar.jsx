@@ -21,7 +21,7 @@ const Navbar = () => {
     const navOptions = <>
         <li><Link to="/about"><a>About Us</a></Link></li>
         <li className="w-1/4"><details>
-            <summary>Our Team</summary>
+            <summary>Team</summary>
             <ul>
                 <li><Link to="/firstCommittee">1st Steering Committee</Link></li>
                 <li><Link to="/secondCommittee">2nd Steering Committee</Link></li>
@@ -46,21 +46,21 @@ const Navbar = () => {
                 <img src="https://i.ibb.co/m5HG8CM/logo.png" className="w-12 h-12 lg:w-20 lg:h-20" />
                 <Link to="/"><a className="normal-case md:text-xl btn btn-ghost">NSTU Science Club</a></Link>
             </div>
-            <div className="hidden navbar-center lg:flex">
-                <ul className="px-1 menu menu-horizontal">
+            <div className="hidden navbar-end md:flex">
+                <ul className="px-1 menu menu-horizontal" style={{ flexWrap: 'nowrap' }}>
                     {navOptions}
                 </ul>
             </div>
             {
                 user ?
-                    <div className="w-1/2 md:w-32 navbar-end row-reverse">
-                        <button onClick={handleLogOut} className="btn btn-ghost navbar-end">
+                    <div className="w-1/2 bg-white md:w-32 navbar-end row-reverse">
+                        <button onClick={handleLogOut} className="btn btn-sm md:btn-md">
                             LogOut
                         </button>
                     </div>
                     :
-                    <div className="w-1/2 md:w-32 navbar-end row-reverse">
-                        <Link className="btn btn-ghost navbar-end" to="/login">Login</Link>
+                    <div className="w-1/2 bg-white md:w-32 navbar-end row-reverse">
+                        <Link className="bg-white btn btn-sm md:btn-md" to="/login">Login</Link>
                     </div>
             }
         </div>

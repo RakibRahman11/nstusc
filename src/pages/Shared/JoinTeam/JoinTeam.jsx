@@ -42,28 +42,34 @@ const JoinTeam = () => {
                 <li>For any further query, please email dsclub@diu.edu.bd</li>
             </ul>
 
-            <button className="flex justify-start mx-auto my-5" onClick={() => document.getElementById('my_modal_3').showModal()}><Button buttonTitle={"JOIN NSTUSC"}></Button></button>
-
+            <button className="flex justify-start mx-auto my-5" onClick={() => document.getElementById('my_modal_3').showModal()}>
+                <Button buttonTitle={"JOIN NSTUSC"}></Button>
+            </button>
             <dialog id="my_modal_3" className="modal">
                 <div className="modal-box">
                     <form method="dialog">
                         {/* if there is a button in form, it will close the modal */}
                         <button className="absolute btn btn-sm btn-circle btn-ghost right-2 top-2">✕</button>
                     </form>
-                    <h3 className="mx-auto text-lg font-bold">Registration Form</h3>
-                    <div className="px-5 py-4">
+                    <SectionTitle heading={"Registration Form"}></SectionTitle>
+                    <div>
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <div className="w-2/3 my-2 form-control">
+                            <div className="w-full mx-auto my-2 md:w-2/3 form-control">
                                 <input type="text" {...register("name", { required: true })} name="name" placeholder="Name" className="input input-bordered" />
                                 {errors.name && <span className="text-rose-600">Name is required</span>}
                             </div>
 
-                            <div className="w-2/3 my-2 form-control">
+                            <div className="w-full mx-auto my-2 md:w-2/3 form-control">
                                 <input type="text" {...register("id", { required: true })} name="id" placeholder="Student ID" className="input input-bordered" />
                                 {errors.id && <span className="text-rose-600">Student ID is required</span>}
                             </div>
 
-                            <div className="w-2/3 max-w-xs my-2 form-control">
+                            <div className="w-full mx-auto my-2 md:w-2/3 form-control">
+                                <input type="email" {...register("email", { required: true })} name="email" placeholder="Mail address" className="input input-bordered" />
+                                {errors.email && <span className="text-rose-600">Mail is required</span>}
+                            </div>
+
+                            <div className="w-2/3 max-w-xs my-2 md:mx-auto form-control">
                                 <select {...register("gender", { required: true })} className="select select-bordered">
                                     <option disabled selected>Gender</option>
                                     <option>Male</option>
@@ -71,13 +77,7 @@ const JoinTeam = () => {
                                 </select>
                             </div>
 
-                            <div className="w-2/3 my-2 form-control">
-                                <input type="email" {...register("email", { required: true })} name="email" placeholder="Mail address" className="input input-bordered" />
-                                {errors.email && <span className="text-rose-600">Mail is required</span>}
-                            </div>
-
-
-                            <div className="w-2/3 max-w-xs my-2 form-control">
+                            <div className="w-2/3 max-w-xs my-2 md:mx-auto form-control">
                                 <select {...register("faculty", { required: true })} className="select select-bordered">
                                     <option disabled selected>Faculty</option>
                                     <option>Faculty of Engineering</option>
@@ -89,17 +89,12 @@ const JoinTeam = () => {
                                 </select>
                             </div>
 
-                            <div className="w-2/3 max-w-xs my-2 form-control">
-                                <select {...register("department", { required: true })} className="select select-bordered">
-                                    <option disabled selected>Department</option>
-                                    <option>CSTE</option>
-                                    <option>ACCE</option>
-                                    <option>ICE</option>
-                                    <option>EEE</option>
-                                </select>
+                            <div className="w-full mx-auto my-2 md:w-2/3 form-control">
+                                <input type="text" {...register("department", { required: true })} name="department" placeholder="Department" className="input input-bordered" />
+                                {errors.department && <span className="text-rose-600">Department is required</span>}
                             </div>
 
-                            <div className="w-2/3 max-w-xs my-2 form-control">
+                            <div className="w-full mx-auto my-2 md:w-2/3 form-control">
                                 <input type="number"
                                     {...register("contact", {
                                         required: true,

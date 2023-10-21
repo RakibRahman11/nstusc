@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 const SignUp = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
@@ -50,7 +51,8 @@ const SignUp = () => {
             </Helmet>
             <figure><img src="https://i.ibb.co/6y9DHb8/3d-modern-plexus-design-network-communications-modern-techno.jpg" alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">Create a new account</h2>
+                <SectionTitle heading={"Create a new account"}></SectionTitle>
+                {/* <h2 className="card-title">Create a new account</h2> */}
                 <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                     <div className="form-control">
                         <label className="label">

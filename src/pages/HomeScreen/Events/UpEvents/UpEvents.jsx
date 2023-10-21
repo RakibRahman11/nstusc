@@ -18,7 +18,7 @@ const UpEvents = () => {
                     upEvents.map(item => <div
                         key={item._id}
                     >
-                        <div>
+                        <div className="mx-5">
                             <img src={item.event_image} alt="" />
                             <h3 className="my-2 text-lg font-bold text-center uppercase border-l-4 border-[#08153d] bg-[#3157ab]/[.3]">{item.events_name}</h3>
                         </div>
