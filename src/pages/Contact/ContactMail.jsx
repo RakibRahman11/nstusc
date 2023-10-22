@@ -37,7 +37,7 @@ const ContactMail = () => {
                 <title>Contact NSTUSC</title>
             </Helmet>
             <div className="mx-auto card-body">
-                <SectionTitle heading={"Send message to NSTU Science Club"}></SectionTitle>
+                <SectionTitle heading={"Send mail to NSTU Science Club"}></SectionTitle>
                 <form ref={form} onSubmit={handleSubmit(sendEmail)} className="mx-auto card-body lg:w-1/2 sm:w-full md:w-1/2">
                     <div className="form-control">
                         <label className="label">

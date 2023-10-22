@@ -4,10 +4,12 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './styles.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 
 const Featured = () => {
     return (
-        <div>
+        <div className='my-5'>
+            <SectionTitle heading={"Featured in newspaper"}></SectionTitle>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}

@@ -17,7 +17,7 @@ const FirstCommittee = () => {
                         firstCommittee.map(item => <>
                             <div>
                                 <img className="w-4/6 mx-auto rounded-lg mt-28" src={item.image} alt="" />
-                                <div className="py-10 -mt-8 text-center rounded-b-3xl bg-cyan-100">
+                                <div className="py-10 -mt-8 text-center rounded-b-3xl bg-[#3157ab]/[.3] ">
                                     <h1 className="text-2xl font-semibold">{item.name}</h1>
                                     <h1 className="text-xl">{item.designation}</h1>
                                     <h3>Department: {item.department}</h3>
